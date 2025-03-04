@@ -1,17 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: white;
     font-family: serif;
 }
 
 /* navber */
 
-nav{
+nav {
     background-color: #F9F7F3;
     display: flex;
     justify-content: space-between;
@@ -19,7 +19,7 @@ nav{
     padding: 20px 4rem;
 }
 
-.button{
+.button {
     background-color: #B4F461;
     padding: 10px 30px;
     border: none;
@@ -28,20 +28,20 @@ nav{
     font-weight: 700;
 }
 
-.title{
+.title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 5px;
 }
 
-.coin-color{
+.coin-color {
     color: #111111B3;
 }
 
 /* Main */
 /* Button Part */
-.btn-part{
+.btn-part {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +49,7 @@ nav{
     margin: 50px 0px;
 }
 
-.donation{
+.donation {
     background-color: #B4F461;
     padding: 16px 32px;
     border: none;
@@ -58,7 +58,7 @@ nav{
     font-weight: 700;
 }
 
-.history{
+.history {
     color: #111111B3;
     padding: 16px 32px;
     border: 1px solid #111111B3;
@@ -73,17 +73,23 @@ nav{
 
 /* Responsive Desgin */
 @media screen and (max-width: 600px) {
-    
-    nav{
+
+    nav {
         padding: 0px;
     }
 
-    .button{
+    .button {
         padding: 10px 20px;
         font-weight: 500;
     }
 
-    .title{
+    .title {
         gap: 0px;
+    }
+
+    /* Main */
+    /* Button Part */
+    .btn-part {
+        margin: 30px 0px;
     }
 }
