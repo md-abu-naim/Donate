@@ -19,7 +19,7 @@ nav{
     padding: 20px 4rem;
 }
 
-.btn{
+.button{
     background-color: #B4F461;
     padding: 10px 30px;
     border: none;
@@ -39,6 +39,34 @@ nav{
     color: #111111B3;
 }
 
+/* Main */
+/* Button Part */
+.btn-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 50px 0px;
+}
+
+.donation{
+    background-color: #B4F461;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 15px;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.history{
+    color: #111111B3;
+    padding: 16px 32px;
+    border: 1px solid #111111B3;
+    border-radius: 15px;
+    font-style: bold;
+    font-weight: 700;
+}
+
 
 
 
@@ -50,7 +78,7 @@ nav{
         padding: 0px;
     }
 
-    .btn{
+    .button{
         padding: 10px 20px;
         font-weight: 500;
     }
