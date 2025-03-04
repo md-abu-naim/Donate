@@ -67,6 +67,14 @@ nav {
     font-weight: 700;
 }
 
+/* Donation Part */
+.donate{
+    border: 1px solid #1111111A;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+
+}
 
 
 
