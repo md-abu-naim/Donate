@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: serif;
+}
+
+/* navber */
+
+nav{
+    background-color: #F9F7F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4rem;
+}
+
+.btn{
+    background-color: #B4F461;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 15px;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.coin-color{
+    color: #111111B3;
+}
