@@ -134,6 +134,33 @@ main {
     color: #111111B3;
 }
 
+/* Modal */
+.modal{
+    background-color: #F9F7F3;
+    border: 1px solid grey;
+    border-radius: 15px;
+    text-align: center;
+    width: 40%;
+}
+
+.modal-title{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.description{
+    color: #111111B3;
+    padding: 16px;
+}
+
+.btn-close{
+    background-color: #1111110D;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin: 16px 0px;
+}
+
 
 /* Responsive Desgin */
 @media screen and (max-width: 600px) {
