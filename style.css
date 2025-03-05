@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     background-color: white;
-    font-family: serif;
+    font-family: "Lexend", serif;
 }
 
 /* navber */
@@ -40,6 +42,10 @@ nav {
 }
 
 /* Main */
+main {
+    margin: 80px;
+}
+
 /* Button Part */
 .btn-part {
     display: flex;
@@ -68,14 +74,52 @@ nav {
 }
 
 /* Donation Part */
-.donate{
+.donate {
     border: 1px solid #1111111A;
+    border-radius: 16px;
     padding: 32px;
     display: flex;
     justify-content: space-between;
-
+    gap: 32px;
 }
 
+.donate-amount {
+    display: flex;
+    align-items: center;
+    background-color: #1111110D;
+    border-radius: 8px;
+    width: 125px;
+    justify-content: center;
+    padding: 5px;
+    gap: 5px;
+}
+
+.headline {
+    font-weight: bold;
+    font-size: 23px;
+    padding: 16px 0px;
+}
+
+.input {
+    color: #11111166;
+    padding: 18px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    border: gray 1px solid;
+}
+
+.donate-now {
+    background-color: #B4F461;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    font-style: bold;
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+}
 
 
 
