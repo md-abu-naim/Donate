@@ -140,8 +140,19 @@ main {
     }
 
     /* Main */
+    main {
+        margin: 5px;
+    }
+
     /* Button Part */
     .btn-part {
         margin: 30px 0px;
+    }
+
+    /* Donation Part */
+    .donate {
+        padding: 5px;
+        flex-direction: column;
+        gap: 10px;
     }
 }
