@@ -194,4 +194,14 @@ main {
         flex-direction: column;
         gap: 10px;
     }
+
+    /* Modal */
+    .modal{
+        width: 100%;
+    }
+
+    .modal-title{
+        font-size: 30px;
+        padding: 15px;
+    }
 }
