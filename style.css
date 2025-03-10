@@ -163,6 +163,28 @@ main {
 }
 
 
+/* JavaScript Css Code */
+.hidden{
+    display: none;
+}
+
+
+.btn-history{
+    background-color: #B4F461;
+    font-weight: 900;
+    border: none;
+}
+
+.remove{
+    color: #111111B3;
+    padding: 16px 32px;
+    border: 1px solid #111111B3;
+    border-radius: 15px;
+    font-style: bold;
+    font-weight: 700;
+    background-color: white;
+}
+
 /* Responsive Desgin */
 @media screen and (max-width: 600px) {
 
