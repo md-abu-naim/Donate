@@ -32,6 +32,10 @@ document.getElementById('noakhali').addEventListener('click', function () {
         return
     }
 
+    if(inputText > balance){
+        alert(`Please enter ${balance} under amount`)
+    }
+
     const addElement = document.getElementById('noakhali-donate')
     const addDonate = parseFloat(addElement.innerText) || 0
     const inputAmount = parseFloat(inputText)
@@ -52,3 +56,6 @@ document.getElementById('noakhali').addEventListener('click', function () {
     HistoryPart.append(div)
     
 })
+
+// Feni Donate Card
+document.getElementById('feni')
