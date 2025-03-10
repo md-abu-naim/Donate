@@ -122,11 +122,10 @@ main {
 }
 
 /* History */
-.history{
+.history-box{
     border: 1px solid #1111111A;
     border-radius: 16px;
     padding: 32px;
-    display: none;
 }
 
 .histroy-title{
@@ -168,6 +167,10 @@ main {
     display: none;
 }
 
+.remove{
+    display: block;
+}
+
 
 .btn-history{
     background-color: #B4F461;
@@ -175,7 +178,7 @@ main {
     border: none;
 }
 
-.remove{
+.btn-donation{
     color: #111111B3;
     padding: 16px 32px;
     border: 1px solid #111111B3;
@@ -184,6 +187,8 @@ main {
     font-weight: 700;
     background-color: white;
 }
+
+
 
 /* Responsive Desgin */
 @media screen and (max-width: 600px) {
