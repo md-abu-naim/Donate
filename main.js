@@ -27,6 +27,11 @@ document.getElementById('noakhali').addEventListener('click', function () {
     const inputField = document.getElementById('noakhali-input')
     const inputText = inputField.value
 
+    if(inputText <= 0 || isNaN(inputText)){
+        alert('Please enter the valid ammount')
+        return
+    }
+
     const addElement = document.getElementById('noakhali-donate')
     const addDonate = parseFloat(addElement.innerText) || 0
     const inputAmount = parseFloat(inputText)
@@ -45,6 +50,5 @@ document.getElementById('noakhali').addEventListener('click', function () {
                 <p class="histroy-title">Date : ${new Date()} </p>`
 
     HistoryPart.append(div)
-    console.log(HistoryPart);
     
 })
