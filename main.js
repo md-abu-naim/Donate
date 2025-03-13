@@ -4,6 +4,7 @@ const donationBtn = document.getElementById('btn-donation')
 const HistoryBtn = document.getElementById('btn-history')
 const ammount = document.getElementById('balance')
 const balance = parseFloat(ammount.innerText)
+const modal = document.getElementById('modal')
 
 // history Button
 const btnHistory = document.getElementById('btn-history').addEventListener('click', function () {
@@ -134,4 +135,6 @@ document.getElementById('qouta').addEventListener('click', () => {
 
     HistoryPart.append(div)
     inputField.value = ''
+
+
 })
