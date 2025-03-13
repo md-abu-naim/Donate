@@ -136,7 +136,7 @@ document.getElementById('qouta').addEventListener('click', () => {
     HistoryPart.append(div)
     inputField.value = ''
 
-    // modal.classList.remove('hidden')
+    modal.classList.remove('hidden')
 })
 
 // Modal Close
