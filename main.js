@@ -59,6 +59,8 @@ document.getElementById('noakhali').addEventListener('click', function () {
 
     HistoryPart.append(div)
 
+    modal.classList.remove('hidden')
+    
     inputField.value = ''
 
 })
@@ -96,7 +98,7 @@ document.getElementById('feni').addEventListener('click', () => {
                 <p class="histroy-title">Date : ${new Date()} </p>`
 
     HistoryPart.append(div)
-    
+
     modal.classList.remove('hidden')
 
     inputField.value = ''
