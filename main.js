@@ -27,13 +27,13 @@ document.getElementById('noakhali').addEventListener('click', function () {
     const inputField = document.getElementById('noakhali-input')
     const inputText = inputField.value
 
-    if(inputText <= 0 || isNaN(inputText)){
+    if (inputText <= 0 || isNaN(inputText)) {
         alert('Please enter the valid ammount')
         inputField.value = ''
         return
     }
 
-    if(inputText > balance){
+    if (inputText > balance) {
         alert(`Please enter ${balance} under amount`)
         inputField.value = ''
         return
@@ -59,7 +59,7 @@ document.getElementById('noakhali').addEventListener('click', function () {
     HistoryPart.append(div)
 
     inputField.value = ''
-    
+
 })
 
 // Feni Donate Card
@@ -67,12 +67,12 @@ document.getElementById('feni').addEventListener('click', () => {
     const inputField = document.getElementById('feni-input')
     const inputText = parseFloat(inputField.value)
 
-    if(isNaN(inputText) || inputText <= 0){
+    if (isNaN(inputText) || inputText <= 0) {
         alert('Please enter a valid number')
         inputField.value = ''
         return
     }
-    if(inputText > balance){
+    if (inputText > balance) {
         alert(`Please enter ${balance} under ammount`)
         inputField.value = ''
         return
@@ -103,13 +103,13 @@ document.getElementById('qouta').addEventListener('click', () => {
     const inputField = document.getElementById('qouta-input')
     const inputText = parseFloat(inputField.value)
 
-    if(isNaN(inputText) || inputText <= 0){
+    if (isNaN(inputText) || inputText <= 0) {
         alert('Please enter a valid number')
         inputField.value = ''
         return
     }
 
-    if(inputText > balance){
+    if (inputText > balance) {
         alert(`Please enter ${balance} under ammount`)
         inputField.value = ''
         return
@@ -131,7 +131,7 @@ document.getElementById('qouta').addEventListener('click', () => {
 
     div.innerHTML = `<h4><span>${total}</span> Taka is Donated for famine-2024 at Feni, Bangladesh</h4>
                 <p class="histroy-title">Date : ${new Date()} </p>`
-    
-    HistoryPart.append(div) 
-    inputField.value = ''         
+
+    HistoryPart.append(div)
+    inputField.value = ''
 })
