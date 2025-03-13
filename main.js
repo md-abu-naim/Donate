@@ -97,3 +97,41 @@ document.getElementById('feni').addEventListener('click', () => {
     HistoryPart.append(div)
     inputField.value = ''
 })
+
+// Qouta Movement
+document.getElementById('qouta').addEventListener('click', () => {
+    const inputField = document.getElementById('qouta-input')
+    const inputText = parseFloat(inputField.value)
+
+    if(isNaN(inputText) || inputText <= 0){
+        alert('Please enter a valid number')
+        inputField.value = ''
+        return
+    }
+
+    if(inputText > balance){
+        alert(`Please enter ${balance} under ammount`)
+        inputField.value = ''
+        return
+    }
+
+    const addElement = document.getElementById('qouta-donate')
+    const addDonate = parseFloat(addElement.innerText)
+
+    const total = addDonate + inputText
+
+    addElement.innerText = total
+
+    const newBalance = balance - inputText
+    ammount.innerText = newBalance
+
+
+    const div = document.createElement('div')
+    div.classList.add('history-box')
+
+    div.innerHTML = `<h4><span>${total}</span> Taka is Donated for famine-2024 at Feni, Bangladesh</h4>
+                <p class="histroy-title">Date : ${new Date()} </p>`
+    
+    HistoryPart.append(div) 
+    inputField.value = ''         
+})
