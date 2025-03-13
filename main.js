@@ -29,11 +29,14 @@ document.getElementById('noakhali').addEventListener('click', function () {
 
     if(inputText <= 0 || isNaN(inputText)){
         alert('Please enter the valid ammount')
+        inputField.value = ''
         return
     }
 
     if(inputText > balance){
         alert(`Please enter ${balance} under amount`)
+        inputField.value = ''
+        return
     }
 
     const addElement = document.getElementById('noakhali-donate')
@@ -55,7 +58,7 @@ document.getElementById('noakhali').addEventListener('click', function () {
 
     HistoryPart.append(div)
 
-    inputField.innerText = ''
+    inputField.value = ''
     
 })
 
@@ -66,9 +69,13 @@ document.getElementById('feni').addEventListener('click', () => {
 
     if(isNaN(inputText) || inputText <= 0){
         alert('Please enter a valid number')
+        inputField.value = ''
+        return
     }
     if(inputText > balance){
         alert(`Please enter ${balance} under ammount`)
+        inputField.value = ''
+        return
     }
 
     const addElement = document.getElementById('feni-donate')
@@ -88,4 +95,5 @@ document.getElementById('feni').addEventListener('click', () => {
                 <p class="histroy-title">Date : ${new Date()} </p>`
 
     HistoryPart.append(div)
+    inputField.value = ''
 })
