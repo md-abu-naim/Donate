@@ -96,6 +96,9 @@ document.getElementById('feni').addEventListener('click', () => {
                 <p class="histroy-title">Date : ${new Date()} </p>`
 
     HistoryPart.append(div)
+    
+    modal.classList.remove('hidden')
+
     inputField.value = ''
 })
 
@@ -134,9 +137,10 @@ document.getElementById('qouta').addEventListener('click', () => {
                 <p class="histroy-title">Date : ${new Date()} </p>`
 
     HistoryPart.append(div)
-    inputField.value = ''
 
     modal.classList.remove('hidden')
+
+    inputField.value = ''
 })
 
 // Modal Close
